@@ -1,0 +1,4 @@
+repository "SnakeGame@OleksandrShevchuk@cloud"
+  path "/"
+    br "/main"
+    co "/main"
