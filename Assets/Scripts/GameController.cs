@@ -3,24 +3,16 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    private Model _model;
+    [SerializeField] private Model _model;
     private Ticker _ticker;
     [SerializeField] private InputController _input;
     [SerializeField] private View _view;
 
     private void Start()
     {
-        _model = new Model();
-        var snadeHead = new Vector2Int(x:_model.FieldSize.x / 2, y: _model.FieldSize.y / 2);
-        var snakeBody = snadeHead - _input.Direction;
-        _model.Snake = new List<Vector2Int>
-        {
-            snadeHead,
-            snakeBody,
-            snakeBody - _input.Direction,
-        };
-
+        _model.Initialize(_input.Direction);
         _model.Food = RandomNotSnake();
+
         _ticker = new Ticker(_model.TurnDuration, OnTickHander);
 
         _view.Initialize(_model);
@@ -57,6 +49,7 @@ public class GameController : MonoBehaviour
         else {
             if (IsFoodCollected())
             {
+                _model.Points += 10;
                 _model.Snake.Add(lastSegmentPosition);
                 _model.Food = RandomNotSnake();
             }
