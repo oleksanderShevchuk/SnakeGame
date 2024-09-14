@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 630439843
+    locked: 0
+  - name: GameField
+    uniqueID: 1022127235
+    locked: 0
+  - name: Snake
+    uniqueID: 2249529843
+    locked: 0
+  - name: Food
+    uniqueID: 3869007351
+    locked: 0
+  - name: Foreground
+    uniqueID: 1782922525
+    locked: 0
