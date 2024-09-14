@@ -15,10 +15,13 @@ The game features touch controls for mobile devices and keyboard controls for de
 
 ![image](https://github.com/user-attachments/assets/e38c7e36-68ce-4f7f-9fd5-b0e344d0049b)
 *The Desktop screen.*
+
 ![image](https://github.com/user-attachments/assets/f9237a73-6688-490d-9d97-2d6e09886972)
 *The Desktop screen with progress (Points: 50).*
+
 ![image](https://github.com/user-attachments/assets/3fc25277-d07f-4af7-8f24-816242a88c5f)
 *The mobile screen (ex. Samsung Gelexy S10e).*
+
 
 ## Installation
 
