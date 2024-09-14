@@ -5,7 +5,7 @@ public class GameController : MonoBehaviour
 {
     private Model _model;
     private Ticker _ticker;
-    [SerializeField] private InputControler _input;
+    [SerializeField] private InputController _input;
     [SerializeField] private View _view;
 
     private void Start()
